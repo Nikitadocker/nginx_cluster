@@ -22,7 +22,10 @@ resource "docker_container" "nginx" {
   name = "web_server"
   ports {
     internal = 80
-    
+    external = 8000
+
+   }
+
   }
 
 
