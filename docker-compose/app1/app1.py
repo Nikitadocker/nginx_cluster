@@ -1,8 +1,12 @@
-from flask import request, Flask
-import json
-app1 = Flask(__name__)
-@app1.route('/')
-def hello_world():
-return 'Salam alikom, this is App2 :) '
-if __name__ == '__main__':
-app1.run(debug=True, host='0.0.0.0')
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def hello_geek():
+    return "<h1>Hello from Flask & Docker</h1>"
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0")
