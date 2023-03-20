@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_geek():
-    return "<h1>Hello from Flask & Docker 1 app</h1>"
+    return "<h1>Hello from web-server 1</h1>"
 
 
 if __name__ == "__main__":
